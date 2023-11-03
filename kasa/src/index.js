@@ -1,12 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './Styles/index.css';
-import App from './Components/App';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Header from './Components/Header/header';
+import Card from './Components/Card/card';
+import Footer from './Components/Footer/footer'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <App />
+      <Router>
+          <Header />
+          <Routes>
+              <Route path="/" element={<Home />} />
+                <Route path="/card/:anounceId" element={<Card />} />
+              <Route path="/about" element={<About />} />
+          </Routes>
+          <Footer />
+      </Router>
   </React.StrictMode>
 );
 

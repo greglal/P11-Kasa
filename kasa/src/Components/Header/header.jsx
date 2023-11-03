@@ -1,0 +1,17 @@
+import { NavLink } from 'react-router-dom'
+import '../../Styles/Header.css'
+import logo from '../../Assets/logo.png'
+
+export default function Header() {
+    return (
+        <div className='kasa-header'>
+            <img src={logo} alt='Logo Kasa' className='kasa-logo' />
+            <nav className='kasa-nav'>
+                <NavLink to="/"
+                         className={({isActive}) => (isActive ? 'active-link-nav' : 'link-nav')}>Accueil</NavLink>
+                <NavLink to="/About"
+                         className={({isActive}) => (isActive ? 'active-link-nav' : 'link-nav')}>A Propos</NavLink>
+            </nav>
+        </div>
+    )
+}

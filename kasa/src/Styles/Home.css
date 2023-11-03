@@ -1,0 +1,26 @@
+.ban {
+    background: rgba(0, 0, 0);
+    border-radius: 25px;
+    width: 1240px;
+    height: 223px;
+    margin: auto;
+}
+
+.banniere{
+    width: 1240px;
+    height: 223px;
+    border-radius: 25px;
+    position: absolute;
+    opacity:0.7;
+    object-fit: cover;
+}
+
+.title {
+    color:#FFFFFF;
+    text-align: center;
+    font-size: 48px;
+    top : 87px;
+    left : 50px;
+    position: relative;
+    z-index:2;
+}

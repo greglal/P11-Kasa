@@ -1,0 +1,138 @@
+.home-card{
+    width: 1240px;
+    margin: auto;
+}
+
+.home-pic {
+    width : 1240px;
+    height : 415px;
+    margin-top : 50px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.Hometitle{
+    display: flex;
+    flex-direction : row;
+    justify-content:space-between;
+    width: 1240px;
+    height: 77px;
+    margin-top: 20px;
+}
+
+.home-title {
+    width: 850px;
+    height: 77px;
+}
+.home-title h1{
+    color: #FF6060;
+    height: 36px;
+    font-size: 40px;
+    margin:0;
+}
+
+.home-title p{
+    color: #FF6060;
+    height: 27px;
+    font-size : 18px;
+    margin-top:10px;
+}
+
+.host{
+    width: 167px;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.host p{
+    width: 93px;
+    height: 52px;
+    font-size: 18px;
+    text-align: right;
+    color: #FF6060;
+}
+
+.host img{
+    width: 64px;
+    height: 64px;
+    border-radius:50%;
+    object-fit: cover;
+}
+
+.tags{
+    width: 750px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tag{
+    background-color:#FF6060;
+    border-radius: 10px;
+    width: 115px;
+    height: 20px;
+    color: white;
+    padding-top: 5px;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.home-description{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.description{
+    width: 582px;
+}
+
+.description p{
+    /*display: none;*/
+    background-color: #F6F6F6;
+    border-radius: 0 0 10px 10px ;
+    padding: 20px;
+    color: #FF6060;
+    margin-top: -20px;
+    position: relative;
+    z-index:1;
+}
+
+.equipments{
+    width: 582px;
+}
+
+.list-container{
+    background-color: #F6F6F6;
+    border-radius: 0 0 10px 10px ;
+    margin-top: -20px;
+    padding: 3px;
+    color: #FF6060;
+    position: relative;
+    z-index:1;
+}
+
+.eq-list{
+    /*display: none;*/
+
+}
+
+.stuff{
+    list-style-type: none;
+    margin-top:0;
+}
+
+.description-title{
+    background-color: #FF6060;
+    color: white;
+    height: 37px;
+    border-radius: 10px;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-left: 10px;
+    position: relative;
+    z-index:2;
+}

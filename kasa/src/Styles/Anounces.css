@@ -1,0 +1,48 @@
+.Kasa-anounces{
+    width: 1240px;
+    background-color: #F6F6F6;
+    border-radius:25px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.anounce{
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    padding: 30px;
+    margin: auto;
+}
+
+.bg-anounce{
+    background: linear-gradient(#FFFFFF 0%, #000000 50%);
+    width: 340px;
+    height: 340px;
+    border-radius:10px;
+}
+
+.anounce-cover{
+    width: 340px;
+    height: 340px;
+    object-fit: fill;
+    opacity: 0.7;
+    border-radius:10px;
+}
+
+.anounce h2{
+    position: relative;
+    top: -65px;
+    left: 20px;
+    font-size: 18px;
+    color: white;
+    width: 300px;
+    height: 52px;
+}
+
+.card-link{
+    text-decoration: none;
+}
