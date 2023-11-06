@@ -1,0 +1,10 @@
+.ratings{
+    width: 196px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+}
+ .svg-inline--fa{
+     height: 36px;
+ }
+

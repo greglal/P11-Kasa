@@ -2,6 +2,8 @@ import {useParams} from 'react-router-dom'
 import {anounces} from '../../Datas/Anounces'
 import Collapse from '../../Components/Collapse/collapse'
 import Carousel from '../../Components/Carousel/carousel'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import  {faStar} from '@fortawesome/free-solid-svg-icons'
 
 import '../../Styles/Card.css'
 
@@ -11,10 +13,11 @@ export default function Card() {
     const {anounceId} = useParams()
     const anounce = anounces.find((anounce) => anounce.id === anounceId);
     const tags = anounce.tags
-    const equipments = anounce.equipments.map((equipment)=> (<ul className="eq-list">
-            <li className="stuff">{equipment}</li>
+    const equipments = anounce.equipments.map((equipment)=> (<ul key={equipment} className="eq-list">
+            <li className="stuff" >{equipment}</li>
         </ul>)
     )
+    const stars= [1,2,3,4,5];
 
     return (
         <div>
@@ -36,10 +39,18 @@ export default function Card() {
             <div className = "tags-and-rate">
                 <div className="tags">
                     {tags.map((tag) => (
-                        <div className="tag">{tag}</div>
+                        <div className="tag" key={tag}>{tag}</div>
                     ))}
                 </div>
-                <div>stars</div>
+
+                <div className="ratings">
+                    { stars.map(element=> {
+                        const nbStars = parseInt(anounce.rating);
+                        return(
+                            <FontAwesomeIcon icon ={faStar} key={"star-"+element.toString()} style={(element <= nbStars) ? {color: "#FF6060", height:"36px"} : {color: "lightgrey",height:"36px"}}></FontAwesomeIcon>
+                        )
+                    })}
+                </div>
             </div>
 
 
