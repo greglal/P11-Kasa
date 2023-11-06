@@ -1,6 +1,7 @@
 import {useParams} from 'react-router-dom'
 import {anounces} from '../../Datas/Anounces'
 import Collapse from '../../Components/Collapse/collapse'
+import Carousel from '../../Components/Carousel/carousel'
 
 import '../../Styles/Card.css'
 
@@ -18,7 +19,7 @@ export default function Card() {
     return (
         <div>
 
-            {/*div carrousel*/}
+            <Carousel pictures={anounce.pictures} />
 
             <div className="Hometitle">
                 <div className="home-title">

@@ -1,0 +1,32 @@
+.error{
+    width: 1240px;
+    margin: auto;
+}
+
+.code-error{
+    width: 597px;
+    height: 263px;
+    margin: 100px auto;
+    font-size: 288px;
+    color: #FF6060;
+    text-align: center;
+}
+
+.oups{
+    width: 872px;
+    height: 51px;
+    margin: 150px auto;
+    font-size: 36px;
+    color: #FF6060;
+}
+
+.return-home{
+    width: 1240px;
+    height: 26px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.return-home a{
+    color: #FF6060;
+}

@@ -1,0 +1,41 @@
+.Carousel{
+    width: 1240px;
+    height: 415px;
+    margin: 50px auto;
+}
+
+.pictures {
+    width: 1240px;
+    height: 415px;
+}
+
+.pics{
+    width: 1240px;
+    height: 415px;
+    object-fit: cover;
+    position: absolute;
+}
+.arrows-count{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+
+.previous{
+    position: relative;
+    top: -250px;
+    margin-left: 20px;
+}
+
+.next{
+    position: relative;
+    top: -250px;
+    margin-right: 20px;
+}
+
+.pic-counter{
+    color: white;
+    position: relative;
+    top: -60px;
+}

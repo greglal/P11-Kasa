@@ -6,7 +6,8 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Header from './Components/Header/header';
 import Card from './Components/Card/card';
-import Footer from './Components/Footer/footer'
+import Footer from './Components/Footer/footer';
+import Error from './Components/Error/error'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
               <Route path="/" element={<Home />} />
                 <Route path="/card/:anounceId" element={<Card />} />
               <Route path="/about" element={<About />} />
+              <Route path="*" element={<Error />} />
           </Routes>
           <Footer />
       </Router>
