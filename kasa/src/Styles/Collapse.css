@@ -1,21 +1,19 @@
 .home-collapse {
     width: 1240px;
-    margin: auto;
-    margin-top: 20px;
+    margin: 20px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .description {
-    width: 40%;
+    margin-top: 20px;
 }
 
 .description-title{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     background-color: #FF6060;
     color: white;
     height: 37px;

@@ -44,8 +44,8 @@ export default function Card() {
 
 
             <div className='home-collapse'>
-                <Collapse title ='Description' content ={anounce.description} />
-                <Collapse title ='Equipements' content ={equipments} />
+                <Collapse title ='Description' content ={anounce.description} width="45%" />
+                <Collapse title ='Equipements' content ={equipments} width="45%" />
             </div>
 
         </div>
