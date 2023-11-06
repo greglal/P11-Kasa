@@ -1,4 +1,4 @@
-import falaise from '../../Assets/falaise_full.png'
+import falaise from '../../Assets/falaise.png'
 
 export default function Banniere() {
     return (
