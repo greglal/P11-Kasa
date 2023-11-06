@@ -5,7 +5,7 @@ import '../../Styles/Collapse.css'
 export default function Collapse({title, content}) {
     const  [active, setActive] = useState(false)
 
-    const handleToggle = e => {
+    const handleToggle = () => {
         setActive(!active)
     }
 
