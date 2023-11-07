@@ -1,8 +1,15 @@
 .principes{
-    width: 1240px;
+    max-width: 1240px;
     margin: 50px auto;
 }
 
 .principe{
-    width: 1240px;
+    max-width: 1240px;
+}
+
+@media (max-width: 650px){
+    .principes{
+        width: 335px;
+    }
+
 }

@@ -1,5 +1,5 @@
 .error{
-    width: 1240px;
+    max-width: 1240px;
     margin: auto;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .return-home{
-    width: 1240px;
+    max-width: 1240px;
     height: 26px;
     margin: 150px auto;
     text-align: center;
@@ -29,4 +29,29 @@
 
 .return-home a{
     color: #FF6060;
+}
+
+@media (max-width: 650px){
+    .error{
+        width: 335px;
+    }
+
+    .code-error{
+         width: 198px;
+        height: 99px;
+        font-size: 96px;
+        margin: 75px auto;
+    }
+
+    .oups{
+        width: 260px;
+        font-size: 18px;
+        text-align: center;
+        margin: 100px auto;
+    }
+
+    .return-home{
+        width: 221px;
+        margin: 100px auto;
+    }
 }

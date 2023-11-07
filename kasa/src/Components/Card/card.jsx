@@ -2,7 +2,7 @@ import {useParams} from 'react-router-dom'
 import {anounces} from '../../Datas/Anounces'
 import Collapse from '../../Components/Collapse/collapse'
 import Carousel from '../../Components/Carousel/carousel'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import  {faStar} from '@fortawesome/free-solid-svg-icons'
 
 import '../../Styles/Card.css'

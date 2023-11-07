@@ -2,8 +2,7 @@
     width: 1240px;
     background-color: #F6F6F6;
     border-radius:25px;
-    margin: auto;
-    margin-top: 50px;
+    margin: 50px auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -45,4 +44,30 @@
 
 .card-link{
     text-decoration: none;
+}
+
+@media (max-width: 650px){
+    .Kasa-anounces{
+        width: 335px;
+    }
+
+    .anounce{
+        width: 335px;
+        height: 255px;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+
+    .bg-anounce{
+        width: 335px;
+        height: 255px;
+    }
+
+    .anounce-cover{
+        width: 335px;
+        height: 255px;
+
+    }
+
 }

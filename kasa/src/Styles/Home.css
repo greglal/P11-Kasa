@@ -1,7 +1,12 @@
+.home{
+    max-width:1240px;
+    margin: auto;
+}
+
 .ban {
     background: rgba(0, 0, 0);
     border-radius: 25px;
-    width: 1240px;
+    max-width: 1240px;
     height: 223px;
     margin: 50px auto;
 }
@@ -19,8 +24,31 @@
     color:#FFFFFF;
     text-align: center;
     font-size: 48px;
-    top : 87px;
-    left : 50px;
+    top : 75px;
+    /*left : 50px;*/
     position: relative;
     z-index:2;
+}
+
+@media (max-width: 650px){
+    .home{
+        width: 335px;
+    }
+    .ban{
+        width: 335px;
+        height: 111px;
+    }
+
+    .banniere{
+        width: 335px;
+        height: 111px;
+    }
+
+    .title {
+        font-size: 24px;
+        top: 40px;
+        word-wrap: break-word;
+        text-align: left;
+        margin-left: 10px;
+    }
 }
