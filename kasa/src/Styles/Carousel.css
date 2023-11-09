@@ -1,5 +1,5 @@
 .Carousel{
-    width: 1240px;
+    max-width: 1240px;
     height: 415px;
     margin: 50px auto;
 }
@@ -38,4 +38,34 @@
     color: white;
     position: relative;
     top: -60px;
+}
+
+@media (max-width: 650px){
+    .Carousel{
+        width: 335px;
+        height: 255px;
+        margin: auto;
+    }
+
+    .pictures{
+        width: 335px;
+        height: 255px;
+    }
+
+    .pics{
+        width: 335px;
+        height: 255px;
+    }
+
+    .previous{
+        top: -140px;
+        width: 20px;
+        height: 30px;
+    }
+
+    .next{
+        top: -140px;
+        width: 20px;
+        height: 30px;
+    }
 }

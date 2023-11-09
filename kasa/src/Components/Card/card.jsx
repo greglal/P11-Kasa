@@ -20,43 +20,50 @@ export default function Card() {
     const stars= [1,2,3,4,5];
 
     return (
-        <div>
+        <div className="home-card">
 
             <Carousel pictures={anounce.pictures} />
+            <div className="title-tag-host">
+                <div className="Hometitle">
+                    <div className="home-title">
+                        <h1>{anounce.title}</h1>
+                        <p>{anounce.location}</p>
+                    </div>
 
-            <div className="Hometitle">
-                <div className="home-title">
-                    <h1>{anounce.title}</h1>
-                    <p>{anounce.location}</p>
+                    <div className="tags">
+                        {tags.map((tag) => (
+                            <div className="tag" key={tag}>{tag}</div>
+                        ))}
+                    </div>
                 </div>
 
-                <div className="host">
-                    <p>{anounce.host.name}</p>
-                    <img src={anounce.host.picture} alt={anounce.host.name}/>
-                </div>
-            </div>
+                <div className = "host-and-rate">
+                    <div className="host">
+                        <p>{anounce.host.name}</p>
+                        <img src={anounce.host.picture} alt={anounce.host.name}/>
+                    </div>
 
-            <div className = "tags-and-rate">
-                <div className="tags">
-                    {tags.map((tag) => (
-                        <div className="tag" key={tag}>{tag}</div>
-                    ))}
-                </div>
-
-                <div className="ratings">
-                    { stars.map(element=> {
-                        const nbStars = parseInt(anounce.rating);
-                        return(
-                            <FontAwesomeIcon icon ={faStar} key={"star-"+element.toString()} style={(element <= nbStars) ? {color: "#FF6060", height:"36px"} : {color: "lightgrey",height:"36px"}}></FontAwesomeIcon>
-                        )
-                    })}
+                    <div className="ratings">
+                        { stars.map(element=> {
+                            const nbStars = parseInt(anounce.rating);
+                            return(
+                                <FontAwesomeIcon icon ={faStar} key={"star-"+element.toString()} style={(element <= nbStars) ? {color: "#FF6060", height:"36px"} : {color: "lightgrey",height:"36px"}}></FontAwesomeIcon>
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
 
 
             <div className='home-collapse'>
-                <Collapse title ='Description' content ={anounce.description} width="45%" />
-                <Collapse title ='Equipements' content ={equipments} width="45%" />
+                <div className="desc">
+                    <Collapse title ='Description' content ={anounce.description}  />
+
+                </div>
+                <div className="desc">
+                    <Collapse title ='Equipements' content ={equipments} />
+
+                </div>
             </div>
 
         </div>

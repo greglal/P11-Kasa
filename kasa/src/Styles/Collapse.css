@@ -56,3 +56,13 @@
     transform: rotate(-180deg);
     transition: all .3s;
 }
+
+@media (max-width: 650px) {
+    .home-collapse {
+        flex-direction: column;
+        width: 335px;
+    }
+    .description{
+        width: 100%;
+    }
+}

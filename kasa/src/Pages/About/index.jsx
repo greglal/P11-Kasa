@@ -20,10 +20,10 @@ export default function About() {
         <div>
             <AboutBanner />
             <div className="principes">
-                <Collapse title="Fiabilité" content ={fiability} width="100%" />
-                <Collapse title="Respect" content ={respect} width="100%" />
-                <Collapse title="Service" content ={respect} width="100%" />
-                <Collapse title="Sécurité" content ={Security} width="100%" />
+                <Collapse title="Fiabilité" content ={fiability} />
+                <Collapse title="Respect" content ={respect} />
+                <Collapse title="Service" content ={respect} />
+                <Collapse title="Sécurité" content ={Security} />
             </div>
         </div>
     )

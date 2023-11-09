@@ -1,33 +1,29 @@
 .home-card{
-    width: 1240px;
+    max-width: 1240px;
     margin: auto;
 }
 
-.home-pic {
-    width : 1240px;
-    height : 415px;
-    margin-top : 50px;
-    object-fit: cover;
-    border-radius: 25px;
+.title-tag-host{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
 }
 
 .Hometitle{
     display: flex;
-    flex-direction : row;
+    flex-direction : column;
     justify-content:space-between;
-    width: 1240px;
-    height: 77px;
-    margin: auto;
-    margin-top: 20px;
+    max-width: 750px;
+    height: 200px;
 }
 
 .home-title {
-    width: 1000px;
-    height: 77px;
+    /*max-width: 1000px;*/
+    height: 100px;
 }
 .home-title h1{
     color: #FF6060;
-    height: 36px;
+    height: 100px;
     font-size: 36px;
     margin:0;
 }
@@ -63,13 +59,12 @@
     object-fit: cover;
 }
 
-.tags-and-rate{
-    width: 1240px;
+.host-and-rate{
+    max-width: 300px;
+    height: 150px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    margin: auto;
-    margin-top: 20px;
 }
 
 .tags{
@@ -87,6 +82,81 @@
     text-align: center;
     margin-right: 10px;
     margin-top: 10px;
+}
+
+.desc{
+    width: 45%;
+}
+
+@media (max-width: 650px){
+    .home-card{
+        width: 335px;
+    }
+
+    .title-tag-host{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .home-title h1{
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .home-title p{
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .Hometitle{
+        height: 100px;
+        width: 335px;
+    }
+
+    .tags{
+        width: 335px;
+    }
+
+    .tag{
+        font-size: 10px;
+        padding: 5px 10px 5px 10px;
+    }
+
+    .host-and-rate{
+        flex-direction: row;
+        width: 335px;
+        height: 50px;
+        margin-top: 50px;
+    }
+
+    .host{
+        order:2;
+        width: 135px;
+        height: 50px;
+    }
+
+    .ratings{
+        order: 1;
+        width: 98px;
+        height: 20px;
+    }
+
+    .fa-star{
+        width: 18px;
+    }
+
+    .host img{
+        width: 32px;
+        height: 32px;
+    }
+
+    .host p{
+        font-size: 12px;
+    }
+
+    .desc{
+        width: 100%;
+    }
 }
 
 
