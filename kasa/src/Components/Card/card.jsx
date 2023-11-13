@@ -8,7 +8,12 @@ import  {faStar} from '@fortawesome/free-solid-svg-icons'
 import '../../Styles/Card.css'
 
 
-
+/**
+ * house description with carousel, title, location, host, ratings, description and equipment
+ *
+ * @returns {JSX.Element}
+ * @constructor
+ */
 export default function Card() {
     const {anounceId} = useParams()
     const anounce = anounces.find((anounce) => anounce.id === anounceId);
@@ -24,12 +29,16 @@ export default function Card() {
 
             <Carousel pictures={anounce.pictures} />
             <div className="title-tag-host">
+
+                {/*title, location and tags*/}
                 <div className="Hometitle">
+                    {/*title and location*/}
                     <div className="home-title">
                         <h1>{anounce.title}</h1>
                         <p>{anounce.location}</p>
                     </div>
 
+                    {/*tags*/}
                     <div className="tags">
                         {tags.map((tag) => (
                             <div className="tag" key={tag}>{tag}</div>
@@ -37,15 +46,19 @@ export default function Card() {
                     </div>
                 </div>
 
+                {/*host and rates*/}
                 <div className = "host-and-rate">
+                    {/*host name and picture*/}
                     <div className="host">
                         <p>{anounce.host.name}</p>
                         <img src={anounce.host.picture} alt={anounce.host.name}/>
                     </div>
 
+                    {/*ratings */}
                     <div className="ratings">
                         { stars.map(element=> {
                             const nbStars = parseInt(anounce.rating);
+                            console.log(element);
                             return(
                                 <FontAwesomeIcon icon ={faStar} key={"star-"+element.toString()} style={(element <= nbStars) ? {color: "#FF6060", height:"36px"} : {color: "lightgrey",height:"36px"}}></FontAwesomeIcon>
                             )

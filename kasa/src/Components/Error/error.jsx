@@ -1,6 +1,12 @@
 import  {Link} from 'react-router-dom'
 import '../../Styles/Error.css'
 
+/**
+ * error message in case of error 404
+ *
+ * @returns {JSX.Element}
+ * @constructor
+ */
 export default function Error() {
     return (
         <div className='error'>

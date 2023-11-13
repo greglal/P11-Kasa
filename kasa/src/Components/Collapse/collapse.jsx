@@ -2,9 +2,20 @@ import { useState } from 'react'
 import UpArrow from '../../Assets/UpArrow.png'
 import '../../Styles/Collapse.css'
 
+/**
+ * create collapse with a title and content
+ *
+ * @param title
+ * @param content
+ * @returns {JSX.Element}
+ * @constructor
+ */
 export default function Collapse({title, content}) {
     const  [active, setActive] = useState(false)
 
+    /**
+     * inverse state of active
+     */
     const handleToggle = () => {
         setActive(!active)
     }

@@ -2,6 +2,14 @@ import {anounces} from '../../Datas/Anounces'
 import '../../Styles/Anounces.css'
 import {Outlet, Link} from 'react-router-dom'
 
+/**
+ * create a card for each house
+ * contain a cover pic and the anounce's title
+ * link to house's anounce
+ *
+ * @returns {JSX.Element}
+ * @constructor
+ */
 export default function AnounceSection() {
     return (
             <div className='Kasa-anounces'>
