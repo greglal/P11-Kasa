@@ -1,0 +1,28 @@
+/* ********** mobile version ********** */
+
+@media (max-width: 650px){
+
+  /* ***** page About ***** */
+  .principes{
+    width: 335px;
+  }
+
+  /* ***** component anounces ***** */
+  .Kasa-anounces{
+    width: 335px;
+    .anounce {
+      @include anounce-size-mobile;
+      padding: 0;
+      margin-bottom: 20px;
+      .bg-anounce {
+        @include anounce-size-mobile;
+        .anounce-cover {
+          @include anounce-size-mobile;
+        }
+      }
+    }
+  }
+
+
+
+}

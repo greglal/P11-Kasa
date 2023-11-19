@@ -1,0 +1,49 @@
+/* **** page "About" **** */
+.principes{
+  max-width: 1240px;
+  margin: 50px auto;
+}
+
+/* **** component "anounces" ***** */
+.kasa-anounces {
+  width: 1240px;
+  background-color: #F6F6F6;
+  border-radius:25px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .anounce {
+    @include anounce-size;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    padding: 30px;
+    margin: auto;
+    .card-link {
+      text-decoration: none;
+      .bg-anounce {
+        background: linear-gradient(#FFFFFF 0%, #000000 50%);
+        @include anounce-size;
+        border-radius: 10px;
+
+        .anounce-cover {
+          @include anounce-size;
+          object-fit: fill;
+          opacity: 0.7;
+          border-radius: 10px;
+        }
+      }
+    }
+    .anounce h2 {
+      position: relative;
+      top: -65px;
+      left: 20px;
+      font-size: 18px;
+      color: white;
+      width: 300px;
+      height: 52px;
+    }
+  }
+}
+
+/* **** component "card" **** */

@@ -1,0 +1,20 @@
+@mixin anounce-size {
+  width: 340px;
+  height: 340px;
+}
+
+@mixin anounce-size-mobile{
+  width: 335px;
+  height: 255px;
+}
+
+@mixin carousel-size {
+  width: 1240px;
+  height: 415px;
+}
+
+@mixin row-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

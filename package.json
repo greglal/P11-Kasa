@@ -7,5 +7,8 @@
   },
   "devDependencies": {
     "prettier": "^3.0.3"
+  },
+  "scripts": {
+    "sass": "sass --watch ../../kasa/sass/main.scss:./src/Style/style.css"
   }
 }
