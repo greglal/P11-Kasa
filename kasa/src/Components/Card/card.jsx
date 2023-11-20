@@ -4,7 +4,6 @@ import Collapse from '../../Components/Collapse/collapse'
 import Carousel from '../../Components/Carousel/carousel'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import  {faStar} from '@fortawesome/free-solid-svg-icons'
-
 import '../../Styles/Card.css'
 
 
@@ -60,7 +59,9 @@ export default function Card() {
                             const nbStars = parseInt(anounce.rating);
                             console.log(element);
                             return(
-                                <FontAwesomeIcon icon ={faStar} key={"star-"+element.toString()} style={(element <= nbStars) ? {color: "#FF6060", height:"36px"} : {color: "lightgrey",height:"36px"}}></FontAwesomeIcon>
+                                <FontAwesomeIcon icon ={faStar} key={"star-"+element.toString()}
+                                                 style={(element <= nbStars) ? {color: "#FF6060", height:"36px"} : {color: "lightgrey",height:"36px"}}>
+                                </FontAwesomeIcon>
                             )
                         })}
                     </div>
