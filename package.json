@@ -9,6 +9,6 @@
     "prettier": "^3.0.3"
   },
   "scripts": {
-    "sass": "sass --watch ../../kasa/sass/main.scss:./src/Style/style.css"
+    "sass": "sass --watch ./kasa/sass/main.scss: ./kasa/src/Styles/style.css"
   }
 }

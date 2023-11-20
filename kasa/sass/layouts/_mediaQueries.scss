@@ -24,5 +24,152 @@
   }
 
 
+  /* ***** component card ***** */
+  .home-card{
+    width: 335px;
+    .title-tag-host{
+      flex-direction: column;
+      margin-top: 20px;
+      .Hometitle{
+        height: 100px;
+        width: 335px;
+        .home-title h1{
+          height: 50px;
+          font-size: 18px;
+        }
+        .home-title p{
+          height: 30px;
+          font-size: 14px;
+        }
+        .tags{
+          width: 335px;
+          .tag{
+            font-size: 10px;
+            padding: 5px 10px 5px 10px;
+          }
+        }
+      }
+      .host-and-rate{
+        flex-direction: row;
+        width: 335px;
+        height: 50px;
+        margin-top: 50px;
+        .host{
+          order:2;
+          width: 135px;
+          height: 50px;
+          img{
+            width: 32px;
+            height: 32px;
+          }
+          p{
+            font-size: 12px;
+          }
+        }
+        .ratings{
+          order: 1;
+          width: 98px;
+          height: 20px;
+          .fa-star{
+            width: 18px;
+          }
+        }
+      }
+    }
+    .desc{
+      width: 100%;
+    }
+  }
+
+  /* ***** component carousel ***** */
+  .carousel {
+    @include anounce-size-mobile;
+    .pictures {
+      @include anounce-size-mobile;
+      .pics {
+        @include anounce-size-mobile;
+      }
+    }
+    .previous{
+      top: -140px;
+      width: 20px;
+      height: 30px;
+    }
+    .next{
+      top: -140px;
+      width: 20px;
+      height: 30px;
+    }
+  }
+
+  /* ***** component collapse ***** */
+  .home-collapse {
+    flex-direction: column;
+    width: 335px;
+  }
+  .description{
+    width: 100%;
+  }
+
+  /* ***** component error ***** */
+  .error{
+    width: 335px;
+    .code-error{
+      width: 198px;
+      height: 99px;
+      font-size: 96px;
+      margin: 75px auto;
+    }
+    .oups{
+      width: 260px;
+      font-size: 18px;
+      text-align: center;
+      margin: 100px auto;
+    }
+    .return-home{
+      width: 221px;
+      margin: 100px auto;
+    }
+  }
+
+  /* ***** component footer ***** */
+  .kasa-footer p{
+    width: 115px;
+    font-size: 12px;
+    margin-left: 20px;
+  }
+
+  /* ***** component header ***** */
+  .kasa-header{
+    width: 335px;
+    .kasa-logo{
+      height: 47px;
+      width: 145px;
+    }
+    .kasa-nav{
+      width: 145px;
+    }
+  }
+
+  /* ***** page home ***** */
+  .home{
+    width: 335px;
+    .ban{
+      width: 335px;
+      height: 111px;
+      .banniere{
+        width: 335px;
+        height: 111px;
+      }
+      .title {
+        font-size: 24px;
+        top: 40px;
+        word-wrap: break-word;
+        text-align: left;
+        margin-left: 10px;
+      }
+    }
+
+  }
 
 }

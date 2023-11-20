@@ -1,5 +1,5 @@
 import {anounces} from '../../Datas/Anounces'
-import '../../Styles/Anounces.css'
+import '../../Styles/style.css'
 import {Outlet, Link} from 'react-router-dom'
 
 /**

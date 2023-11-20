@@ -47,3 +47,290 @@
 }
 
 /* **** component "card" **** */
+.home-card{
+  max-width: 1240px;
+  margin: auto;
+  .title-tag-host{
+    @include row-between;
+    .Hometitle{
+      display: flex;
+      flex-direction : column;
+      justify-content:space-between;
+      max-width: 750px;
+      height: 200px;
+      .home-title {
+        height: 100px;
+        h1{
+          color: $primary-clr;
+          height: 100px;
+          font-size: 36px;
+          margin:0;
+        }
+        p{
+          color: $primary-clr;
+          height: 27px;
+          font-size : 18px;
+          margin-top:10px;
+        }
+      }
+      .tags{
+        width: 750px;
+        display: flex;
+        flex-direction: row;
+        .tag{
+          background-color:$primary-clr;
+          border-radius: 10px;
+          height: 18px;
+          color: white;
+          padding: 10px;
+          text-align: center;
+          margin-right: 10px;
+          margin-top: 10px;
+        }
+      }
+    }
+    .host-and-rate{
+      max-width: 300px;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .host{
+        width: 167px;
+        height: 64px;
+        @include row-between;
+        align-items: flex-start;
+        p{
+          width: 93px;
+          height: 52px;
+          font-size: 18px;
+          text-align: right;
+          color: $primary-clr;
+        }
+        img{
+          width: 64px;
+          height: 64px;
+          border-radius:50%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .desc{
+    width: 45%;
+  }
+
+}
+
+/* ***** component carousel ***** */
+.Carousel{
+  @include carousel-size;
+  margin: 50px auto;
+  .pictures {
+    @include carousel-size;
+    .pics{
+      @include carousel-size;
+      object-fit: cover;
+      position: absolute;
+    }
+  }
+  .arrows-count{
+    @include row-between;
+    .previous{
+      position: relative;
+      top: -250px;
+      margin-left: 20px;
+    }
+    .next{
+      position: relative;
+      top: -250px;
+      margin-right: 20px;
+    }
+    .pic-counter{
+      color: white;
+      position: relative;
+      top: -60px;
+    }
+  }
+}
+
+/* ***** component collapse ***** */
+.home-collapse {
+  width: 1240px;
+  margin: 20px auto;
+  @include row-between;
+}
+.description {
+  margin-top: 20px;
+  .description-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FF6060;
+    color: $text-clr-light;
+    height: 37px;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px;
+    .collapse-arrow{
+      transform: rotate(0);
+      transition: all .3s;
+    }
+    .active .collapse-arrow{
+      transform: rotate(-180deg);
+      transition: all .3s;
+    }
+
+
+  }
+  .description-content {
+    visibility: hidden;
+    height:0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .2s ease-in;
+    background-color: #F6F6F6;
+    border-radius: 0 0 10px 10px ;
+    padding: 20px;
+    color: $primary-clr;
+    .eq-list {
+      list-style-type: none;
+    }
+    .active .description-content{
+      visibility: visible;
+      height: auto;
+      overflow: visible;
+      padding: 1rem;
+      opacity: 1;
+    }
+  }
+}
+
+/* ***** component error ***** */
+.error{
+  max-width: 1240px;
+  margin: auto;
+  .code-error{
+    width: 597px;
+    height: 263px;
+    margin: 100px auto;
+    font-size: 288px;
+    color: $primary-clr;
+    text-align: center;
+  }
+  .oups{
+    width: 872px;
+    height: 51px;
+    margin: 150px auto;
+    font-size: 36px;
+    color: $primary-clr;
+  }
+  .return-home{
+    max-width: 1240px;
+    height: 26px;
+    margin: 150px auto;
+    text-align: center;
+    a {
+      color: $primary-clr;
+    }
+  }
+}
+
+/* ***** component footer ***** */
+.kasa-footer{
+  width: 100%;
+  height: 209px;
+  background-color: $footer-clr;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  margin: auto;
+  position: relative;
+  bottom:0;
+  img{
+    width: 122px;
+    height: 40px;
+    align-self: center;
+    margin-top: 25px;
+  }
+  p{
+    color: $text-clr-light;
+    align-self: center;
+    font-size: 24px;
+    margin-top: 25px;
+  }
+}
+
+/* ***** component header ***** */
+.kasa-header{
+  display: flex;
+  justify-content:space-between;
+  max-width: 1240px;
+  height: 68px;
+  margin: auto;
+  .kasa-logo{
+    width : 210px;
+    height: 68px;
+  }
+  .kasa-nav{
+    display: flex;
+    justify-content:space-between;
+    max-width : 309px;
+    height : 34px;
+    margin-top: 17px;
+    .link-nav{
+      width : 116px;
+      height: 34px;
+      text-align:right;
+      color: $primary-clr;
+      text-decoration: none;
+    }
+    .active-link-nav{
+      width : 116px;
+      height: 34px;
+      text-align:right;
+      color: $primary-clr;
+      text-decoration: underline;
+    }
+  }
+}
+
+/* ***** page home ***** */
+.home{
+  max-width:1240px;
+  margin: auto;
+  .ban {
+    background: rgba(0, 0, 0);
+    border-radius: 25px;
+    max-width: 1240px;
+    height: 223px;
+    margin: 50px auto;
+    .banniere{
+      width: 1240px;
+      height: 223px;
+      border-radius: 25px;
+      position: absolute;
+      opacity:0.7;
+      object-fit: cover;
+    }
+    .title {
+      color:#FFFFFF;
+      text-align: center;
+      font-size: 48px;
+      top : 75px;
+      position: relative;
+      z-index:2;
+    }
+  }
+}
+
+/* ***** ratings ***** */
+.ratings{
+  width: 196px;
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+}
+.svg-inline--fa{
+  height: 36px;
+}

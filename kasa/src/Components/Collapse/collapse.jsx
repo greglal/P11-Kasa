@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import UpArrow from '../../Assets/UpArrow.png'
-import '../../Styles/Collapse.css'
+import '../../Styles/style.css'
 
 /**
  * create collapse with a title and content

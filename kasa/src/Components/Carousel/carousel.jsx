@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import LeftArrow from '../../Assets/LeftArrow.png'
 import RightArrow from '../../Assets/RightArrow.png'
-import '../../Styles/Carousel.css'
+import '../../Styles/style.css'
 
 /**
  * carousel whith counter, previous arrow and next arrow

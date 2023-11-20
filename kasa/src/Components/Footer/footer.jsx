@@ -1,5 +1,4 @@
-import {Link} from 'react-router-dom'
-import '../../Styles/Footer.css'
+import '../../Styles/style.css'
 import logo_white from '../../Assets/logo_white.png'
 
 export default function Footer () {

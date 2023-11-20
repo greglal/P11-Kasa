@@ -1,5 +1,5 @@
 import  {Link} from 'react-router-dom'
-import '../../Styles/Error.css'
+import '../../Styles/style.css'
 
 /**
  * error message in case of error 404
