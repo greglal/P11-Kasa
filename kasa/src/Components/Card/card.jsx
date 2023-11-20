@@ -57,7 +57,6 @@ export default function Card() {
                     <div className="ratings">
                         { stars.map(element=> {
                             const nbStars = parseInt(anounce.rating);
-                            console.log(element);
                             return(
                                 <FontAwesomeIcon icon ={faStar} key={"star-"+element.toString()}
                                                  style={(element <= nbStars) ? {color: "#FF6060", height:"36px"} : {color: "lightgrey",height:"36px"}}>
